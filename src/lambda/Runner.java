@@ -19,6 +19,14 @@ public class Runner {
 	interface MatematikselIslem
 	{
 		int islem(int a, int b);
+
+		default public void sonuc1(int a, int b) {
+			a = a+b;
+		}
+		
+		static void sonuc2(int a, int b) {
+			a = a+b;
+		}
 	}
 	
 	private int calistir(int a, int b, MatematikselIslem matematikIslemi)
